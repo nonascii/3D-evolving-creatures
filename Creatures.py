@@ -238,7 +238,7 @@ def displayCreatures():
         
         #print p.getBaseVelocity( creature.body.bodyId )[0]
         if isnan(x) or isnan(y) or isnan(z):
-            print 'error'
+            print ('error')
             creatures.remove( creature   )
             creatures.append( Creature() )
 

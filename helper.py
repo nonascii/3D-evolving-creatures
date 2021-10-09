@@ -6,7 +6,7 @@ from random import randint,  uniform
 logging = 1
 def log( text ):
     if logging == 1:
-        print text
+        print (text)
 
 
 def random3f(min, max):

@@ -82,7 +82,7 @@ class Phenotype:
             parent_node = root_node
             child_node  = self.g.genotype.nodes[ neighbor ]
             edge        = self.g.genotype[ -1 ][ neighbor ]
-            print edge[0]['scale']
+            print (edge[0]['scale'])
             iter_limit = parent_node[ 'rec_limit' ]
             log( '\nParsing edge: {0} --> {1}'.format( -1, neighbor ) )
             
@@ -116,7 +116,7 @@ class Phenotype:
                 current_node_index   += 1
                 neighbor_list            = list( self.g.genotype.adj[ neighbor ] ) 
 
-                print 'Child_nei:', neighbor_list
+                print ('Child_nei:', neighbor_list)
 
                 #print root_node['mass']
                 # print bx*sx,  by*sy,  bz*sz

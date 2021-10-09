@@ -96,22 +96,22 @@ class Genotype:
 
     def showInfo(self):
         # Shows nodes edges and data of the genotypes' directed graph
-        print '*Genotype Node List: ', self.genotype.nodes
-        print '*Genotype Node Data: '
+        print ('*Genotype Node List: ', self.genotype.nodes)
+        print ('*Genotype Node Data: ')
         d = self.genotype.nodes.data()
         for node in d:
-            print 'Node:', node[0] 
+            print ('Node:', node[0])
             for key,value  in node[1].iteritems():
-                print ' ', key, value
+                print (' ', key, value)
                 
-        print '*Genotype Edge List: ', self.genotype.edges
-        print '*Genotype Edge Data: '
+        print ('*Genotype Edge List: ', self.genotype.edges)
+        print ('*Genotype Edge Data: ')
         d = self.genotype.edges.data() 
         for edge in d:
-            print 'Parent Node:', edge[0] 
-            print 'Child Node:',  edge[1] 
+            print ('Parent Node:', edge[0])
+            print ('Child Node:',  edge[1])
             for key, value  in    edge[2].iteritems():
-                print ' ', key, value
+                print (' ', key, value)
 
     def getData(self):
         n = self.genotype.nodes.data()
